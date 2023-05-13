@@ -60,10 +60,11 @@ export default function App() {
     return "Meowo default, some kinda error???"
   }
   return (
-    <main>
-      <label>
+    <main className="flex-auto mx-auto">
+      <label className="font-bold">
        Ask CatGPT a question: 
         <input name="" 
+          className="outline-1 outline-black"
           placeholder="What is love?"
           value={question}
           onChange={handleInputChange}
